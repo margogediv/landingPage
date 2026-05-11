@@ -1,0 +1,209 @@
+/* ============================================================
+   Mistral AI — Colors & Type Foundations
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+/* PP Editorial Old is a paid typeface from Pangram Pangram.
+   Closest free Google Fonts substitute: "Newsreader" (Italic 400 captures
+   the elegant near-serif character of PP Editorial Old's display weight). */
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap");
+
+:root {
+  /* ---------- Brand & Accent ---------- */
+  --mistral-primary: #fa520f;
+  --mistral-primary-deep: #cc3a05;
+  --mistral-on-primary: #ffffff;
+  --mistral-sunshine-300: #ffd06a;
+  --mistral-sunshine-500: #ffb83e;
+  --mistral-sunshine-700: #ffa110;
+  --mistral-sunshine-800: #ff8105;
+  --mistral-sunshine-900: #ff8a00;
+  --mistral-yellow-saturated: #ffd900;
+
+  /* ---------- Sunset stripe gradient stops ---------- */
+  --mistral-block-5: #ffe295;
+  --mistral-block-6: #ffd900;
+  --mistral-block-7: #ff8105;
+
+  /* ---------- Cream / Warm neutrals ---------- */
+  --mistral-cream: #fff8e0;
+  --mistral-cream-light: #fffaeb;
+  --mistral-cream-deeper: #fff0c2;
+  --mistral-beige-deep: #e6d5a8;
+
+  /* ---------- Text ---------- */
+  --mistral-ink: #1f1f1f;
+  --mistral-ink-tint: #3d3d3d;
+  --mistral-charcoal: #2c2c2c;
+  --mistral-slate: #4a4a4a;
+  --mistral-steel: #6a6a6a;
+  --mistral-stone: #8a8a8a;
+  --mistral-muted: #a8a8a8;
+
+  /* ---------- Surfaces ---------- */
+  --mistral-canvas: #ffffff;
+  --mistral-surface: #fafafa;
+  --mistral-surface-cream: #fff8e0;
+  --mistral-surface-cream-soft: #fffaeb;
+  --mistral-surface-code: #1c1c1e;
+
+  /* ---------- Dividers ---------- */
+  --mistral-hairline: #e5e5e5;
+  --mistral-hairline-soft: #ededed;
+  --mistral-hairline-strong: #c7c7c7;
+
+  /* ---------- On-color helpers ---------- */
+  --mistral-on-dark: #ffffff;
+  --mistral-on-dark-muted: #a8a8a8;
+  --mistral-on-cream: #1f1f1f;
+
+  /* ---------- Footer ---------- */
+  --mistral-footer-cream: #fff8e0;
+
+  /* ---------- Semantic ---------- */
+  --mistral-link: #fa520f;
+
+  /* ---------- Semantic fg/bg aliases ---------- */
+  --fg-1: var(--mistral-ink);
+  --fg-2: var(--mistral-slate);
+  --fg-3: var(--mistral-steel);
+  --fg-muted: var(--mistral-muted);
+  --bg-1: var(--mistral-canvas);
+  --bg-2: var(--mistral-surface);
+  --bg-cream: var(--mistral-cream);
+  --bg-cream-soft: var(--mistral-cream-light);
+  --bg-code: var(--mistral-surface-code);
+  --border-1: var(--mistral-hairline-soft);
+  --border-2: var(--mistral-hairline);
+  --border-strong: var(--mistral-hairline-strong);
+  --border-cream: var(--mistral-beige-deep);
+  --accent: var(--mistral-primary);
+  --accent-deep: var(--mistral-primary-deep);
+
+  /* ---------- Type families ---------- */
+  --font-display: "Newsreader", "PP Editorial Old", "Times New Roman", Georgia, serif;
+  --font-ui: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+
+  /* ---------- Type scale (raw) ---------- */
+  --t-hero-display: 400 84px/1.05 var(--font-display);
+  --t-display-lg: 400 64px/1.10 var(--font-display);
+  --t-heading-1: 400 52px/1.15 var(--font-display);
+  --t-stat-display: 400 56px/1.10 var(--font-display);
+  --t-heading-2: 500 36px/1.20 var(--font-ui);
+  --t-heading-3: 500 28px/1.25 var(--font-ui);
+  --t-heading-4: 500 22px/1.30 var(--font-ui);
+  --t-heading-5: 500 18px/1.40 var(--font-ui);
+  --t-subtitle: 400 18px/1.50 var(--font-ui);
+  --t-body-md: 400 16px/1.55 var(--font-ui);
+  --t-body-md-medium: 500 16px/1.55 var(--font-ui);
+  --t-body-sm: 400 14px/1.50 var(--font-ui);
+  --t-body-sm-medium: 500 14px/1.50 var(--font-ui);
+  --t-caption: 400 13px/1.40 var(--font-ui);
+  --t-caption-bold: 600 13px/1.40 var(--font-ui);
+  --t-micro: 500 12px/1.40 var(--font-ui);
+  --t-micro-up: 600 11px/1.40 var(--font-ui);
+  --t-button: 500 14px/1.30 var(--font-ui);
+  --t-code-md: 400 14px/1.50 var(--font-mono);
+
+  /* ---------- Radii ---------- */
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 8px;
+  --r-lg: 12px;
+  --r-xl: 16px;
+  --r-xxl: 20px;
+  --r-full: 9999px;
+
+  /* ---------- Spacing ---------- */
+  --s-xxs: 4px;
+  --s-xs: 8px;
+  --s-sm: 12px;
+  --s-md: 16px;
+  --s-lg: 20px;
+  --s-xl: 24px;
+  --s-xxl: 32px;
+  --s-xxxl: 40px;
+  --s-section-sm: 48px;
+  --s-section: 64px;
+  --s-section-lg: 96px;
+  --s-hero: 120px;
+
+  /* ---------- Shadows ---------- */
+  --shadow-1: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  --shadow-2: 0 4px 12px 0 rgba(0, 0, 0, 0.04);
+  --shadow-3: 0 12px 24px -4px rgba(0, 0, 0, 0.08);
+  --shadow-4: 0 16px 48px -8px rgba(0, 0, 0, 0.12);
+
+  /* ---------- Signature gradient (the sunset stripe) ---------- */
+  --sunset-stripe:
+    linear-gradient(
+      90deg,
+      var(--mistral-primary) 0%,
+      var(--mistral-sunshine-700) 28%,
+      var(--mistral-sunshine-500) 52%,
+      var(--mistral-yellow-saturated) 76%,
+      var(--mistral-cream) 100%
+    );
+  --sunset-hero:
+    linear-gradient(
+      135deg,
+      var(--mistral-sunshine-700) 0%,
+      var(--mistral-sunshine-900) 60%,
+      var(--mistral-primary) 100%
+    );
+}
+
+/* ============================================================
+   Semantic element defaults
+   ============================================================ */
+
+html, body {
+  background: var(--bg-1);
+  color: var(--fg-1);
+  font: var(--t-body-md);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, .h1 { font: var(--t-heading-1); letter-spacing: -0.5px; }
+h2, .h2 { font: var(--t-heading-2); letter-spacing: -0.5px; }
+h3, .h3 { font: var(--t-heading-3); }
+h4, .h4 { font: var(--t-heading-4); }
+h5, .h5 { font: var(--t-heading-5); }
+.t-hero { font: var(--t-hero-display); letter-spacing: -1.5px; }
+.t-display { font: var(--t-display-lg); letter-spacing: -1px; }
+.t-stat { font: var(--t-stat-display); letter-spacing: -1px; }
+.t-subtitle { font: var(--t-subtitle); }
+.t-body { font: var(--t-body-md); }
+.t-body-em { font: var(--t-body-md-medium); }
+.t-sm { font: var(--t-body-sm); }
+.t-sm-em { font: var(--t-body-sm-medium); }
+.t-caption { font: var(--t-caption); color: var(--fg-3); }
+.t-caption-bold { font: var(--t-caption-bold); }
+.t-micro { font: var(--t-micro); color: var(--fg-3); }
+.t-micro-up { font: var(--t-micro-up); letter-spacing: 1px; text-transform: uppercase; color: var(--fg-3); }
+code, .t-code { font: var(--t-code-md); }
+
+a, .link {
+  color: var(--mistral-link);
+  text-decoration: none;
+}
+a:hover, .link:hover { text-decoration: underline; }
+
+/* ============================================================
+   Signature surfaces & bands
+   ============================================================ */
+
+.sunset-stripe {
+  height: 56px;
+  width: 100%;
+  background: var(--sunset-stripe);
+}
+
+.cream-surface {
+  background: var(--bg-cream);
+  color: var(--fg-1);
+}

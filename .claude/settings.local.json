@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(cp /tmp/langepage/project/assets/mistral-tokens.css /Users/marharyta/Documents/Claude/Projects/landing-design/assets/)",
+      "Bash(cp /tmp/langepage/project/assets/site-styles.css /Users/marharyta/Documents/Claude/Projects/landing-design/assets/)",
+      "Bash(cp /tmp/langepage/project/assets/interactions.js /Users/marharyta/Documents/Claude/Projects/landing-design/assets/)",
+      "Bash(git -C /Users/marharyta/Documents/Claude/Projects/landing-design status)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}

@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Władysław Dąbrowa — Mechanik samochodowy Warszawa</title>
+  <meta name="description" content="Władysław Dąbrowa — niezależny mechanik samochodowy w Warszawie. Diagnostyka, silniki, skrzynie, hamulce, zawieszenie. Pon-Pt 8:00-18:00, tel. +48 600 123 456." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/mistral-tokens.css" />
+  <link rel="stylesheet" href="assets/site-styles.css" />
+  <style>
+    /* Image placeholder — shown when no real photo is supplied */
+    .img-ph {
+      position: absolute; inset: 0;
+      background: var(--bg-elev-2, #232329);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--on-dark-muted, rgba(255,255,255,0.32));
+    }
+    .img-ph svg { width: 40px; height: 40px; opacity: 0.35; }
+    .img-ph span {
+      position: absolute; bottom: 12px; left: 0; right: 0;
+      text-align: center; font-size: 11px; letter-spacing: 0.6px;
+      opacity: 0.4;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─────────────────── PROMO STRIP ─────────────────── -->
+<div class="promo">
+  <div class="container">
+    <div class="promo-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+      <span><strong>ul. Mechaniczna 12</strong> · Warszawa-Praga</span>
+    </div>
+    <div class="promo-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+      <span>Pon-Pt <strong>8:00 — 18:00</strong> · Sob na zamówienie</span>
+    </div>
+    <div class="promo-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span>Serwis · <strong>+48 600 123 456</strong></span>
+    </div>
+    <div class="promo-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+      <span><strong>biuro@dabrowa-serwis.pl</strong></span>
+    </div>
+  </div>
+</div>
+
+<!-- ─────────────────── NAV ─────────────────── -->
+<header class="nav">
+  <div class="container">
+    <a href="#hero" class="brand">
+      <div class="brand-mark">W</div>
+      <div class="brand-text">
+        <span class="brand-name">Władysław Dąbrowa</span>
+        <span class="brand-sub">Mechanik · Warszawa</span>
+      </div>
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="#hero" data-target="hero" class="active">Start</a>
+      <a href="#about" data-target="about">O mnie</a>
+      <a href="#services" data-target="services">Usługi</a>
+      <a href="#gallery" data-target="gallery">Galeria</a>
+      <a href="#reviews" data-target="reviews">Opinie</a>
+      <a href="#faq" data-target="faq">FAQ</a>
+    </nav>
+    <a href="#contact" class="nav-cta">
+      Umów wizytę
+      <span class="dot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </span>
+    </a>
+  </div>
+</header>
+
+<!-- ─────────────────── HERO ─────────────────── -->
+<section class="hero hero-bg-photo" id="hero">
+  <div class="hero-bg" style="background-image: url('assets/hero-bg.jpg');"></div>
+  <div class="container container-hero">
+    <div class="hero-stack">
+      <div class="eyebrow reveal"><span class="dot"></span>Mechanik samochodowy · Warszawa</div>
+      <h1 class="hero-title reveal reveal-delay-1">
+        Twój samochód <em>w dobrych</em> rękach.
+      </h1>
+      <p class="hero-sub reveal reveal-delay-2">
+        Niezależny serwis prowadzony osobiście przez Władysława Dąbrowę.
+        Diagnostyka, naprawy mechaniczne i elektryka — uczciwie wycenione,
+        terminowo wykonane. 18 lat doświadczenia z każdą marką.
+      </p>
+      <div class="hero-ctas reveal reveal-delay-3">
+        <a href="tel:+48600123456" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          +48 600 123 456
+        </a>
+        <a href="#services" class="btn-ghost">
+          Zobacz usługi
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Stats strip -->
+    <div class="stats reveal reveal-delay-3">
+      <div class="stat">
+        <div class="stat-label">Doświadczenie</div>
+        <div class="stat-num">18<small>lat</small></div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Naprawionych aut</div>
+        <div class="stat-num">3200<small>+</small></div>
+      </div>
+      <div class="stat stat-accent">
+        <div class="stat-label">Ocena Google</div>
+        <div class="stat-num">4.9<small>/5</small></div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Gwarancja na pracę</div>
+        <div class="stat-num">12<small>mies.</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────── O MNIE ─────────────────── -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head">
+      <div class="reveal">
+        <div class="eyebrow"><span class="dot"></span>O mnie</div>
+        <h2 class="display">Mechanik <em>z pasji</em>, nie z przypadku.</h2>
+      </div>
+      <p class="lede reveal reveal-delay-1">
+        Prowadzę warsztat sam — to znaczy, że samochód, który zostawiasz rano,
+        wieczorem odbierasz z rąk tej samej osoby, która Ci go diagnozowała.
+        Bez przekazywania, bez „zaraz oddzwonimy".
+      </p>
+    </div>
+
+    <div class="about">
+      <div class="about-photo reveal">
+        <img src="assets/about-portrait.webp" alt="Władysław Dąbrowa — mechanik samochodowy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+        <div class="badge">
+          Od <strong>2007</strong>
+          Praga-Południe
+        </div>
+      </div>
+
+      <div class="about-body reveal reveal-delay-1">
+        <div>
+          <p>
+            Pierwszy silnik rozebrałem mając 16 lat, w garażu ojca w Radzyminie.
+            <strong>Od 18 lat naprawiam zawodowo</strong> — najpierw w dużym autoryzowanym
+            serwisie VAG, potem przez 8 lat jako kierownik warsztatu wielomarkowego.
+            W 2019 otworzyłem własny serwis na Pradze, żeby robić rzeczy po swojemu:
+            uczciwie, bez podbijania cen i bez wciskania niepotrzebnych części.
+          </p>
+          <p>
+            Specjalizuję się w <strong>diagnostyce komputerowej</strong> — mam VCDS,
+            Launch X-431 i Bosch KTS. Najczęściej trafiają do mnie samochody, których
+            inne warsztaty „już sprawdzały". Najwięcej pracy mam przy <strong>silnikach
+            benzynowych i Diesel TDI/CDI</strong> oraz mechatronice automatycznych skrzyń.
+          </p>
+          <p>
+            Nie obsługuję flot, nie podpisuję umów na lata z naprawiaczami szkód.
+            Przyjmuję dziennie maksymalnie 4 auta — żeby każdemu poświęcić tyle uwagi,
+            ile faktycznie potrzebuje.
+          </p>
+        </div>
+
+        <div class="signature">
+          <div>
+            <div class="signature-name">Władysław Dąbrowa</div>
+            <div class="signature-role">Właściciel · Mechanik</div>
+          </div>
+        </div>
+
+        <div class="about-quickfacts">
+          <div class="quickfact">
+            <strong>VAG</strong>
+            <span>Główna specjalizacja</span>
+          </div>
+          <div class="quickfact">
+            <strong>4</strong>
+            <span>Auta dziennie max</span>
+          </div>
+          <div class="quickfact">
+            <strong>OE</strong>
+            <span>Tylko oryginał lub odp.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────── USŁUGI ─────────────────── -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head">
+      <div class="reveal">
+        <div class="eyebrow"><span class="dot"></span>Usługi</div>
+        <h2 class="display">Co <em>zrobię</em> dla Twojego auta.</h2>
+      </div>
+      <p class="lede reveal reveal-delay-1">
+        Każda usługa zaczyna się od bezpłatnej rozmowy i diagnozy.
+        Wycenę przedstawiam zanim cokolwiek odkręcę — nigdy nie ma „niespodzianek"
+        przy odbiorze.
+      </p>
+    </div>
+
+    <div class="services-grid reveal">
+      <div class="service">
+        <span class="service-num">01</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line><path d="M7 9l2 2 4-4"></path></svg>
+        </div>
+        <h3>Diagnostyka komputerowa</h3>
+        <p>Pełne odczytanie sterowników, analiza danych live i mapowanie błędów. VCDS, Launch X-431, Bosch KTS.</p>
+        <div class="service-tags">
+          <span class="service-tag">VAG</span>
+          <span class="service-tag">OBD2</span>
+          <span class="service-tag">EOBD</span>
+        </div>
+      </div>
+
+      <div class="service service-feature">
+        <span class="service-num">02</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+        </div>
+        <h3>Remont silnika</h3>
+        <p>Od wymiany rozrządu po pełną renowację — głowice, tłoki, łańcuchy, turbo. Diesel i benzyna.</p>
+        <div class="service-tags">
+          <span class="service-tag">TDI</span>
+          <span class="service-tag">CDI</span>
+          <span class="service-tag">TSI</span>
+        </div>
+      </div>
+
+      <div class="service">
+        <span class="service-num">03</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"></path></svg>
+        </div>
+        <h3>Skrzynie biegów</h3>
+        <p>Manualne i automatyczne (DSG, Tiptronic, ZF). Wymiana oleju, mechatroniki, kompletne renowacje.</p>
+        <div class="service-tags">
+          <span class="service-tag">DSG</span>
+          <span class="service-tag">ZF 6/8HP</span>
+        </div>
+      </div>
+
+      <div class="service">
+        <span class="service-num">04</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="4"></circle><line x1="12" y1="3" x2="12" y2="8"></line><line x1="12" y1="16" x2="12" y2="21"></line></svg>
+        </div>
+        <h3>Układ hamulcowy</h3>
+        <p>Tarcze, klocki, przewody, płyn DOT, ABS. Hamulce ceramiczne w samochodach premium.</p>
+        <div class="service-tags">
+          <span class="service-tag">Brembo</span>
+          <span class="service-tag">ATE</span>
+        </div>
+      </div>
+
+      <div class="service">
+        <span class="service-num">05</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3-9 4 18 3-9h4"></path></svg>
+        </div>
+        <h3>Zawieszenie i amortyzatory</h3>
+        <p>Diagnostyka geometrii, wymiana wahaczy, łączników, amortyzatorów. KW, Bilstein, Sachs.</p>
+        <div class="service-tags">
+          <span class="service-tag">Geometria</span>
+          <span class="service-tag">KYB</span>
+        </div>
+      </div>
+
+      <div class="service">
+        <span class="service-num">06</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+        </div>
+        <h3>Wymiana oleju i filtrów</h3>
+        <p>Pełna obsługa okresowa — olej, filtry, świece, paski. Oleje Mobil 1, Castrol, Liqui Moly.</p>
+        <div class="service-tags">
+          <span class="service-tag">5W30</span>
+          <span class="service-tag">Long Life</span>
+        </div>
+      </div>
+
+      <div class="service">
+        <span class="service-num">07</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        </div>
+        <h3>Elektryka samochodowa</h3>
+        <p>Naprawa instalacji, alternatorów, rozruszników. Programowanie sterowników i kluczyków.</p>
+        <div class="service-tags">
+          <span class="service-tag">CAN-BUS</span>
+          <span class="service-tag">Komfort</span>
+        </div>
+      </div>
+
+      <div class="service">
+        <span class="service-num">08</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+        </div>
+        <h3>Przegląd przedzakupowy</h3>
+        <p>Kompleksowe sprawdzenie auta przed kupnem — 60 punktów, raport PDF, jazda testowa.</p>
+        <div class="service-tags">
+          <span class="service-tag">Raport</span>
+          <span class="service-tag">60 pkt</span>
+        </div>
+      </div>
+
+      <div class="service">
+        <span class="service-num">09</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+        </div>
+        <h3>Naprawa awaryjna</h3>
+        <p>Nie odpala, świeci kontrolka, hałas spod auta? Zadzwoń — najczęściej znajdę okno tego samego dnia.</p>
+        <div class="service-tags">
+          <span class="service-tag">Same-day</span>
+          <span class="service-tag">SOS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────── GALERIA — photo slider ─────────────────── -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <div class="reveal">
+        <div class="eyebrow"><span class="dot"></span>Galeria</div>
+        <h2 class="display">Z <em>warsztatu</em> i nie tylko.</h2>
+      </div>
+      <p class="lede reveal reveal-delay-1">
+        Zdjęcia z bieżącej pracy — auta na podnośniku, narzędzia, drobne
+        i większe naprawy. Przesuń strzałkami, żeby zobaczyć więcej.
+      </p>
+    </div>
+
+    <div class="photo-slider reveal" id="photo-slider">
+      <div class="ps-stage">
+        <div class="ps-slide active" data-idx="0">
+          <div class="img-ph" style="background: linear-gradient(135deg, #1a1a22 0%, #232330 100%);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          </div>
+          <div class="ps-caption"><span class="ps-cat">Diagnostyka</span><span class="ps-title">VW Passat — odczyt VCDS</span></div>
+        </div>
+        <div class="ps-slide" data-idx="1">
+          <div class="img-ph" style="background: linear-gradient(135deg, #1c1a22 0%, #2a2030 100%);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          </div>
+          <div class="ps-caption"><span class="ps-cat">Silnik</span><span class="ps-title">Audi A4 TDI — rozrząd</span></div>
+        </div>
+        <div class="ps-slide" data-idx="2">
+          <div class="img-ph" style="background: linear-gradient(135deg, #1a1c22 0%, #202530 100%);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          </div>
+          <div class="ps-caption"><span class="ps-cat">Hamulce</span><span class="ps-title">BMW E46 — Brembo</span></div>
+        </div>
+        <div class="ps-slide" data-idx="3">
+          <div class="img-ph" style="background: linear-gradient(135deg, #1a2022 0%, #202830 100%);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          </div>
+          <div class="ps-caption"><span class="ps-cat">Zawieszenie</span><span class="ps-title">Golf VII — KW V3</span></div>
+        </div>
+        <div class="ps-slide" data-idx="4">
+          <div class="img-ph" style="background: linear-gradient(135deg, #1a1a20 0%, #262628 100%);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          </div>
+          <div class="ps-caption"><span class="ps-cat">Warsztat</span><span class="ps-title">ul. Mechaniczna 12</span></div>
+        </div>
+        <div class="ps-slide" data-idx="5">
+          <div class="img-ph" style="background: linear-gradient(135deg, #1c1a20 0%, #28222e 100%);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          </div>
+          <div class="ps-caption"><span class="ps-cat">Diagnostyka</span><span class="ps-title">Audi Q5 — sterownik</span></div>
+        </div>
+        <button class="ps-arrow ps-prev" id="ps-prev" aria-label="Poprzednie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+        <button class="ps-arrow ps-next" id="ps-next" aria-label="Następne"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+        <div class="ps-counter"><span id="ps-cur">1</span><span class="ps-sep">/</span><span>6</span></div>
+      </div>
+      <div class="ps-thumbs" id="ps-thumbs">
+        <button class="ps-thumb active" data-idx="0">
+          <div class="img-ph" style="background: #1a1a22;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></div>
+        </button>
+        <button class="ps-thumb" data-idx="1">
+          <div class="img-ph" style="background: #1c1a22;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></div>
+        </button>
+        <button class="ps-thumb" data-idx="2">
+          <div class="img-ph" style="background: #1a1c22;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></div>
+        </button>
+        <button class="ps-thumb" data-idx="3">
+          <div class="img-ph" style="background: #1a2022;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></div>
+        </button>
+        <button class="ps-thumb" data-idx="4">
+          <div class="img-ph" style="background: #1a1a20;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></div>
+        </button>
+        <button class="ps-thumb" data-idx="5">
+          <div class="img-ph" style="background: #1c1a20;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></div>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────── OPINIE ─────────────────── -->
+<section class="section section-cream" id="reviews">
+  <div class="container">
+    <div class="reviews-shell">
+      <div class="reviews-left">
+        <div class="eyebrow reveal"><span class="dot"></span>Opinie klientów</div>
+        <h2 class="display reveal reveal-delay-1">Co mówią <em>moi klienci.</em></h2>
+        <p class="lede reveal reveal-delay-2">
+          Większość moich klientów wraca lub przyprowadza znajomych — to dla
+          mnie najlepszy miernik dobrej roboty. Poniżej kilka świeższych opinii
+          z Google i Facebooka.
+        </p>
+        <div class="review-summary reveal reveal-delay-3">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-summary-num">
+            <strong>4.9 / 5</strong>
+            <span>na podstawie 247 opinii</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews-right reveal">
+        <div class="reviews-track" id="reviews-track">
+          <article class="review-card active">
+            <div class="review-quote-mark">"</div>
+            <p class="review-text">
+              Władek znalazł usterkę, której dwa inne warsztaty nie były w stanie
+              namierzyć. Zamiast wymieniać sterownik (jak proponował dealer),
+              naprawił uszkodzoną wiązkę. Zapłaciłem 5 razy mniej.
+            </p>
+            <div class="review-foot">
+              <div class="review-avatar">MK</div>
+              <div class="review-author">
+                <strong>Marcin Kowalczyk</strong>
+                <span>VW Passat B8 · 3 tygodnie temu</span>
+              </div>
+              <div class="review-rating">★★★★★</div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="review-quote-mark">"</div>
+            <p class="review-text">
+              Mam Audi Q5 i wszędzie słyszałam, że to „samochód do ASO".
+              Tu zrobili mi pełny remont DSG za połowę ceny i z 2-letnią
+              gwarancją. Polecam każdej kobiecie — żadnego cwaniactwa.
+            </p>
+            <div class="review-foot">
+              <div class="review-avatar">AN</div>
+              <div class="review-author">
+                <strong>Anna Nowicka</strong>
+                <span>Audi Q5 · miesiąc temu</span>
+              </div>
+              <div class="review-rating">★★★★★</div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="review-quote-mark">"</div>
+            <p class="review-text">
+              Przyjechałem rano bez wcześniejszego umówienia, bo coś świeciło.
+              Władysław obejrzał auto od ręki, wytłumaczył co jest, ile to
+              kosztuje i kiedy może zrobić. Konkret i kultura.
+            </p>
+            <div class="review-foot">
+              <div class="review-avatar">PŚ</div>
+              <div class="review-author">
+                <strong>Piotr Świerczyński</strong>
+                <span>Skoda Octavia III · 2 miesiące temu</span>
+              </div>
+              <div class="review-rating">★★★★★</div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="review-quote-mark">"</div>
+            <p class="review-text">
+              Przegląd przedzakupowy uratował mnie przed bardzo drogim błędem —
+              znalazł ślady spawu na nadwoziu, których nie widać gołym okiem.
+              Raport dostałem mailem z dokumentacją. Warto każdą złotówkę.
+            </p>
+            <div class="review-foot">
+              <div class="review-avatar">JK</div>
+              <div class="review-author">
+                <strong>Jakub Kaczmarek</strong>
+                <span>BMW 320d · 2 miesiące temu</span>
+              </div>
+              <div class="review-rating">★★★★★</div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="review-quote-mark">"</div>
+            <p class="review-text">
+              Najuczciwszy mechanik w Warszawie. Powiedział wprost: „tego nie
+              musisz teraz wymieniać, wytrzyma jeszcze rok". Kto dziś tak mówi?
+              Wrócę za rok.
+            </p>
+            <div class="review-foot">
+              <div class="review-avatar">EW</div>
+              <div class="review-author">
+                <strong>Elżbieta Wójcik</strong>
+                <span>Toyota Yaris · 3 miesiące temu</span>
+              </div>
+              <div class="review-rating">★★★★★</div>
+            </div>
+          </article>
+        </div>
+
+        <div class="reviews-nav">
+          <button class="review-dot active" data-idx="0" aria-label="1"></button>
+          <button class="review-dot" data-idx="1" aria-label="2"></button>
+          <button class="review-dot" data-idx="2" aria-label="3"></button>
+          <button class="review-dot" data-idx="3" aria-label="4"></button>
+          <button class="review-dot" data-idx="4" aria-label="5"></button>
+          <div class="review-arrows">
+            <button class="review-arrow" id="rev-prev" aria-label="Poprzednia">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button class="review-arrow" id="rev-next" aria-label="Następna">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────── FAQ ─────────────────── -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="faq-shell">
+      <div class="faq-side">
+        <div class="eyebrow reveal"><span class="dot"></span>Najczęściej pytane</div>
+        <h2 class="display reveal reveal-delay-1">Zanim <em>zadzwonisz.</em></h2>
+        <p class="lede reveal reveal-delay-2">
+          Oto pytania, które słyszę najczęściej. Jeśli nie znajdziesz odpowiedzi —
+          po prostu napisz lub zadzwoń, chętnie odpowiem.
+        </p>
+        <div class="help-card reveal reveal-delay-3">
+          <strong>Nie ma Twojego pytania?</strong>
+          <p>Najszybciej odpowiem przez WhatsApp lub telefonicznie w godzinach pracy.</p>
+          <a href="tel:+48600123456" class="btn-primary" style="padding: 10px 18px; font-size: 13px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            +48 600 123 456
+          </a>
+        </div>
+      </div>
+
+      <div class="faq-list reveal">
+        <details class="faq-item">
+          <summary class="faq-q"><span><span class="faq-q-num">01</span><span class="faq-q-text">Czy muszę umawiać wizytę z wyprzedzeniem?</span></span><span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></summary>
+          <div class="faq-a-inner">
+            <p>Tak, zdecydowanie zalecam umówienie się — przyjmuję maksymalnie 4 auta dziennie, żeby każdemu poświęcić odpowiednio czasu. W nagłych przypadkach (auto nie odpala, świeci czerwona kontrolka) zadzwoń — prawie zawsze znajdę okno tego samego lub następnego dnia.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q"><span><span class="faq-q-num">02</span><span class="faq-q-text">Jakie marki obsługujesz?</span></span><span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></summary>
+          <div class="faq-a-inner">
+            <p>Wszystkie europejskie i japońskie marki. Najwięcej pracy mam z grupą VAG (VW, Audi, Skoda, Seat), BMW, Mercedes-Benz oraz Toyota i Honda. Auta amerykańskie (Ford, Chrysler, Jeep) — tak, ale daj znać wcześniej. Hybrydy i EV — diagnostykę i mechanikę tak, baterie wysokonapięciowe odsyłam do specjalisty.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q"><span><span class="faq-q-num">03</span><span class="faq-q-text">Czy daję gwarancję na naprawę?</span></span><span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></summary>
+          <div class="faq-a-inner">
+            <p>Tak — 12 miesięcy na robociznę i części zamontowane przeze mnie (z wyłączeniem części eksploatacyjnych typu klocki, olej, paski po regulaminowym przebiegu). Na renowacje silników i skrzyń automatycznych — 24 miesiące. Wszystko mam zapisane na fakturze.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q"><span><span class="faq-q-num">04</span><span class="faq-q-text">Czy mogę przywieźć własne części?</span></span><span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></summary>
+          <div class="faq-a-inner">
+            <p>Tak, ale wtedy gwarancja obejmuje tylko robociznę. Polecam jednak zaufanie mojej selekcji — mam stałe rabaty u dostawców (Inter Cars, Auto Partner) i zwykle wychodzi taniej niż detal. Na życzenie pokażę faktury zakupu.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q"><span><span class="faq-q-num">05</span><span class="faq-q-text">Wystawiasz faktury VAT?</span></span><span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></summary>
+          <div class="faq-a-inner">
+            <p>Oczywiście — jestem VAT-owcem (JDG). Faktury wystawiam standardowo dla firm i osób prywatnych. Akceptuję płatność BLIK, kartą, przelewem i gotówką.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q"><span><span class="faq-q-num">06</span><span class="faq-q-text">Czy mogę zostawić auto na noc?</span></span><span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></summary>
+          <div class="faq-a-inner">
+            <p>Tak — warsztat jest zamykany, monitorowany i ubezpieczony. Większe naprawy zwykle wymagają 1-3 dni postoju. Jeśli potrzebujesz pojazdu zastępczego — mogę pomóc to zorganizować u zaprzyjaźnionej wypożyczalni.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q"><span><span class="faq-q-num">07</span><span class="faq-q-text">Czy robisz przegląd rejestracyjny?</span></span><span class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></summary>
+          <div class="faq-a-inner">
+            <p>Sam przeglądu badania technicznego (SKP) nie wykonuję — nie mam uprawnień diagnosty. Ale mogę zrobić pełny przegląd kontrolny przed wizytą na stacji i jeśli coś będzie do poprawki — naprawić tego samego dnia. Najbliższa SKP 200 metrów dalej.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────── KONTAKT ─────────────────── -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="eyebrow reveal"><span class="dot"></span>Kontakt</div>
+        <h2 class="display reveal reveal-delay-1">Umów <em>wizytę.</em></h2>
+        <p class="lede reveal reveal-delay-2">
+          Zadzwoń, napisz na WhatsApp albo wbij osobiście — najszybciej oddzwaniam
+          w godzinach pracy. Większość spraw da się załatwić w ciągu jednego dnia.
+        </p>
+
+        <div class="contact-rows reveal reveal-delay-3">
+          <a href="tel:+48600123456" class="contact-row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
+            <div>
+              <div class="lbl">Telefon</div>
+              <div class="val">+48 600 123 456</div>
+            </div>
+          </a>
+          <a href="mailto:biuro@dabrowa-serwis.pl" class="contact-row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
+            <div>
+              <div class="lbl">E-mail</div>
+              <div class="val">biuro@dabrowa-serwis.pl</div>
+            </div>
+          </a>
+          <a href="https://maps.google.com/?q=ul.+Mechaniczna+12,+Warszawa" target="_blank" rel="noopener" class="contact-row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+            <div>
+              <div class="lbl">Adres</div>
+              <div class="val">ul. Mechaniczna 12, 03-289 Warszawa</div>
+            </div>
+          </a>
+          <div class="contact-row" style="cursor: default;">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+            <div>
+              <div class="lbl">Godziny pracy</div>
+              <div class="val">Pon-Pt 8:00 - 18:00 · Sobota na zamówienie</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="socials reveal reveal-delay-4">
+          <a href="#" class="social" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg></a>
+          <a href="#" class="social" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+          <a href="#" class="social" aria-label="Messenger"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.627 0-12 4.974-12 11.111 0 3.498 1.744 6.614 4.469 8.652v4.237l4.088-2.242c1.092.301 2.246.464 3.443.464 6.627 0 12-4.974 12-11.111s-5.373-11.111-12-11.111zm1.191 14.963l-3.055-3.257-5.963 3.257 6.559-6.963 3.131 3.257 5.889-3.257-6.561 6.963z"/></svg></a>
+          <a href="#" class="social" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+        </div>
+      </div>
+
+      <div class="contact-map reveal">
+        <div class="map-tile"></div>
+        <svg class="map-roads" viewBox="0 0 400 500" preserveAspectRatio="none">
+          <path d="M-20 80 Q 200 60 420 140" stroke="rgba(255,255,255,0.08)" stroke-width="14" fill="none"/>
+          <path d="M-20 80 Q 200 60 420 140" stroke="rgba(255,255,255,0.18)" stroke-width="2" fill="none"/>
+          <path d="M60 -10 Q 100 200 240 510" stroke="rgba(255,255,255,0.08)" stroke-width="14" fill="none"/>
+          <path d="M60 -10 Q 100 200 240 510" stroke="rgba(255,255,255,0.18)" stroke-width="2" fill="none"/>
+          <path d="M-20 360 L 420 380" stroke="rgba(255,255,255,0.06)" stroke-width="10" fill="none"/>
+          <path d="M-20 360 L 420 380" stroke="rgba(255,255,255,0.14)" stroke-width="1.5" fill="none"/>
+          <path d="M280 -10 L 320 520" stroke="rgba(255,255,255,0.06)" stroke-width="8" fill="none"/>
+          <path d="M280 -10 L 320 520" stroke="rgba(255,255,255,0.14)" stroke-width="1" fill="none"/>
+        </svg>
+        <div class="map-pin">
+          <div class="pin-label">Mechaniczna 12</div>
+          <div class="pin-dot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────── SUNSET STRIPE + FOOTER ─────────────────── -->
+<div class="sunset-stripe"></div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="brand">
+          <div class="brand-mark">W</div>
+          <div class="brand-text">
+            <span class="brand-name">Władysław Dąbrowa</span>
+            <span class="brand-sub">Mechanik · Warszawa</span>
+          </div>
+        </a>
+        <p>Niezależny serwis samochodowy na warszawskiej Pradze. Diagnostyka, naprawy, uczciwa wycena. Pon-Pt 8:00 — 18:00.</p>
+      </div>
+
+      <div>
+        <h4>Nawigacja</h4>
+        <ul>
+          <li><a href="#about">O mnie</a></li>
+          <li><a href="#services">Usługi</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#reviews">Opinie</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+48600123456">+48 600 123 456</a></li>
+          <li><a href="mailto:biuro@dabrowa-serwis.pl">biuro@dabrowa-serwis.pl</a></li>
+          <li>ul. Mechaniczna 12</li>
+          <li>03-289 Warszawa</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Społeczność</h4>
+        <ul>
+          <li><a href="#">WhatsApp</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Google Maps</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 Władysław Dąbrowa Auto Serwis · NIP 5252876421 · REGON 388124509</div>
+      <div><a href="#" style="color: var(--on-dark-3);">Polityka prywatności</a> · <a href="#" style="color: var(--on-dark-3);">Regulamin</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp floating button -->
+<a href="#" class="wa-float" aria-label="Napisz na WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<script src="assets/interactions.js"></script>
+
+</body>
+</html>
