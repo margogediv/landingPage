@@ -1116,7 +1116,9 @@ img { max-width: 100%; display: block; }
   .hero-grid, .about, .section-head, .reviews-shell, .faq-shell, .contact-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+    align-items: start;
   }
+  .about-photo { min-height: 340px; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .stat:nth-child(2) { border-right: none; }
   .stat:nth-child(-n+2) { border-bottom: 1px solid var(--line-dark); }
